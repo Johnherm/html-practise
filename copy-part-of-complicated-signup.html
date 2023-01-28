@@ -1,0 +1,103 @@
+<html>
+    <title>Complicated Signup Form</title>
+   
+    <head>
+        <link rel="stylesheet" href="fcss.css">
+        <style>
+            div{
+             <!-- background-color: aqua; this is the css part of place which is used text-outline:
+             add some syles by using internal method-->  
+            }
+        </style>
+    </head>
+    <body style="background-image: url(12p.jpg); text-align: center;">
+        <h1>Your Order</h1>
+        <form  method="get" id="order-form">
+            <div>
+                    <label for="order-name">Name</label>
+                    <input type="text"
+                     name="order-name" id="order-name"
+                      placeholder="Please write your name"  autofocus>
+            </div>
+                <div>
+                    <label for="order-email">Email</label>
+                    <input type="text" email="order-name" 
+                    id="order-email" disabled value="johnherma72b@gmail.com">
+                </div>
+                <div>
+                    <label for="order-address1">Address</label>
+                    <input type="text" name="order-address1" id="order-address1" >
+                    <input type="text" name="order-address2" id="order-address2" >
+                </div>
+                <div>
+                    <div>
+                        <label for="order-city">City</label>
+                        <input type="text" name="order-city" id="order-city">
+                    </div>
+                    <div>
+                        <label for="order-state"></label>
+                        <select name="order-state" id="order-state">
+                            <option value="Abajema">Abajema</option>
+                            <option value="Adama">Adama</option>
+                            <option value="Addis Ababa">Addis Ababa</option>
+                            <option value="Hawasa">Hawasa</option>
+                            <option value="Dire dawa">Dire dawa</option>
+                            <option value="Asmera">Asmera</option>
+                            <option value="Mekelle">Mekelle</option>
+                            <option value="Adigrat">Adigrat</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="order-zip">ZIP</label>
+                        <input type="text" name="order-zip" id="order-zip">
+                    </div>
+                </div>
+                <div>
+                    <label for="order-color-sample">What color sample should we send you?</label>
+                    <label for="sample-white">
+                        <input 
+                        disabled type="checkbox" name="color-sample" id="sample-white" value="white">White
+                     </label>
+                     <label for="sample-magenta">
+                        <input type="checkbox" name="color-sample" id="sample-magenta" value="magenta">Magenta
+                     </label>
+                     <label for="sample-coral">
+                        <input type="checkbox" name="color-sample" id="sample-coral" value="white">Coral
+                     </label>
+                     <label for="sample-burgudy">
+                        <input type="checkbox" name="color-sample" id="sample-burgudy" value="white">Burgudy
+                     </label>
+                     <label for="sample-charcol">
+                        <input type ="checkbox"  name="color-sample" id="sample-charcol" value="white">Charcol
+                     </label>
+    
+                </div>
+                <div>
+                    <label for="order-team-size">How large is your team</label>
+                    <label for="team-small"></label>
+                    <input type="radio" name="team-size" id="team-small" value="1-5" checked> 1-5 people
+                    <label for="team-medium"></label>
+                    <input type="radio" name="team-size" id="team-medium" value="6-10"> 6-10 people
+                    <label for="team-large"></label>
+                    <input type="radio" name="team-size" id="team-large" value="10+"> 10+ people
+                </div>
+                <div>
+                    <label for="order-comment">Comments</label>
+                    <textarea name="order-comments" id="order-comments" cols="100" rows="10"
+                     placeholder="Please write some comments if you have an idea about our service"></textarea>
+                </div>
+                <div>
+                    <label for="offeribg-sign-up"></label>
+                    <input type="checkbox"
+                     name="offering-sign-up" 
+                     id="offering-sign-up"> Sign up for special offers
+                </div>
+                <div> <!--We can use several option to get button. For example see some are in the following-->
+                  <!--<button>Place Order</button>-->  
+                 <!--<input type="button" value="Place Order"> but this little bit differ from other--> 
+                 <!--<input type="submit" value="Place Order">--> 
+                </div>
+        </form>
+        <button form="order-form">Place Order</button>
+    </body>
+</html>
